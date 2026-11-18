@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="28dp"
+        android:paddingEnd="28dp"
+        android:paddingTop="28dp"
+        android:paddingBottom="48dp">
+
+        <!-- Logotipo -->
+        <ImageView
+            android:id="@+id/ivMainLogo"
+            android:layout_width="150dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="Logotipo MCIOT"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo" />
+
+        <!-- Bienvenida -->
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/outfit_bold"
+            android:text="¡Bienvenido a MCIOT!"
+            android:textAlignment="center"
+            android:textColor="@color/text_primary"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="28dp"
+            android:fontFamily="@font/outfit_regular"
+            android:text="Selecciona una opción para continuar"
+            android:textAlignment="center"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <!-- Gestión de usuarios -->
+        <LinearLayout
+            android:id="@+id/cardUsers"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/bg_menu_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="Usuarios"
+                android:src="@drawable/ic_group"
+                app:tint="#829416" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit_semibold"
+                    android:text="Gestión de usuarios"
+                    android:textColor="@color/text_primary"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit_regular"
+                    android:text="Crear, consultar, editar y eliminar"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Sensores IoT -->
+        <LinearLayout
+            android:id="@+id/cardSensors"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/bg_menu_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="Sensores IoT"
+                android:src="@drawable/ic_sensors"
+                app:tint="#829416" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit_semibold"
+                    android:text="Sensores IoT"
+                    android:textColor="@color/text_primary"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit_regular"
+                    android:text="Temperatura y control de dispositivos"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Desarrolladores -->
+        <LinearLayout
+            android:id="@+id/cardDevelopers"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/bg_menu_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="Desarrolladores"
+                android:src="@drawable/code"
+                app:tint="#829416" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit_semibold"
+                    android:text="Desarrollador"
+                    android:textColor="@color/text_primary"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit_regular"
+                    android:text="Conoce al equipo de MCIOT"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Cerrar sesión -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:fontFamily="@font/outfit_semibold"
+            android:text="CERRAR SESIÓN"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:backgroundTint="#C62828"
+            app:cornerRadius="0dp"
+            app:icon="@drawable/ic_logout"
+            app:iconGravity="textStart"
+            app:iconTint="@color/white"
+            app:iconSize="20dp" />
+
+    </LinearLayout>
+</ScrollView>
